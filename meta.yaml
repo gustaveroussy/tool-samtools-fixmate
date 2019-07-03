@@ -1,0 +1,4 @@
+name: samtools fixmate
+description: Fix mate paired end reads using samtools.
+authors:
+  - Bastien Job
