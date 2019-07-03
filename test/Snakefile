@@ -3,7 +3,7 @@ rule markdup:
         # single or list of bam files
         bam="mapped/{sample}.bam",
     output:
-        "fixmate/{sample}_md.bam"
+        "fixmate/{sample}_fx.bam"
     log:
         "logs/samtools/fixmate/{sample}.log"
     wrapper:
