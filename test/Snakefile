@@ -1,0 +1,10 @@
+rule markdup:
+    input:
+        # single or list of bam files
+        bam="mapped/{sample}.bam",
+    output:
+        "fixmate/{sample}_md.bam"
+    log:
+        "logs/samtools/fixmate/{sample}.log"
+    wrapper:
+        "https://github.com/gustaveroussy/tool-samtools-fixmate"
